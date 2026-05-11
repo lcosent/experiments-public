@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rsu-tax-optimizer"
+version = "0.1.0"
+description = "RSU vest simulator and sell-vs-hold strategy optimizer for US tech workers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Luca Cosentino" }]
+dependencies = ["click>=8.1", "rich>=13.7", "pyyaml>=6.0", "numpy>=1.24"]
+
+[project.scripts]
+rsu-tax-optimizer = "rsu_optimizer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["rsu_optimizer*"]
