@@ -1,0 +1,15 @@
+REPUBLIC OF GERMANY
+PASSPORT / REISEPASS
+
+Surname:    MUELLER
+Given name: HANS
+Sex:        M
+Nationality: GER
+Date of birth: 03 JUN 1972
+Date of issue: 15 JAN 2014
+Date of expiry: 15 JAN 2024
+Authority: STADT BERLIN
+Passport number: C2X1234567
+
+P<GERMUELLER<<HANS<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+C2X1234567GER7206030M2401158<<<<<<<<<<<<<<<<04
