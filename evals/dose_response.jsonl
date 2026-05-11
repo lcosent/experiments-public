@@ -1,0 +1,12 @@
+{"input": "EC50=100 nM, Hill=1, Emax=1.0, concentration=100 nM", "target": 0.5, "meta": {"ec50": 100, "hill": 1, "emax": 1.0, "conc": 100}}
+{"input": "EC50=10 nM, Hill=1, Emax=1.0, concentration=1 nM", "target": 0.0909, "meta": {"ec50": 10, "hill": 1, "emax": 1.0, "conc": 1}}
+{"input": "EC50=50 nM, Hill=2, Emax=1.0, concentration=50 nM", "target": 0.5, "meta": {"ec50": 50, "hill": 2, "emax": 1.0, "conc": 50}}
+{"input": "EC50=10 nM, Hill=2, Emax=1.0, concentration=30 nM", "target": 0.9, "meta": {"ec50": 10, "hill": 2, "emax": 1.0, "conc": 30}}
+{"input": "EC50=1 nM, Hill=1, Emax=1.0, concentration=0.1 nM", "target": 0.0909, "meta": {"ec50": 1, "hill": 1, "emax": 1.0, "conc": 0.1}}
+{"input": "EC50=100 nM, Hill=4, Emax=1.0, concentration=200 nM", "target": 0.9412, "meta": {"ec50": 100, "hill": 4, "emax": 1.0, "conc": 200}}
+{"input": "EC50=50 nM, Hill=1, Emax=1.0, concentration=500 nM", "target": 0.9091, "meta": {"ec50": 50, "hill": 1, "emax": 1.0, "conc": 500}}
+{"input": "EC50=20 nM, Hill=3, Emax=1.0, concentration=10 nM", "target": 0.1111, "meta": {"ec50": 20, "hill": 3, "emax": 1.0, "conc": 10}}
+{"input": "EC50=5 nM, Hill=1, Emax=1.0, concentration=20 nM", "target": 0.8, "meta": {"ec50": 5, "hill": 1, "emax": 1.0, "conc": 20}}
+{"input": "EC50=1000 nM, Hill=2, Emax=1.0, concentration=2000 nM", "target": 0.8, "meta": {"ec50": 1000, "hill": 2, "emax": 1.0, "conc": 2000}}
+{"input": "EC50=100 nM, Hill=1, Emax=1.0, concentration=1 nM", "target": 0.0099, "meta": {"ec50": 100, "hill": 1, "emax": 1.0, "conc": 1}}
+{"input": "EC50=50 nM, Hill=1.5, Emax=1.0, concentration=200 nM", "target": 0.8889, "meta": {"ec50": 50, "hill": 1.5, "emax": 1.0, "conc": 200}}
