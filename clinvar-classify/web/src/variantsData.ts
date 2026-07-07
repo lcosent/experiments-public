@@ -1,0 +1,602 @@
+export const variantsData = [
+  {
+    "variant": "BRCA1 c.5266dupC",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA1 tumor suppressor; hereditary breast and ovarian cancer syndrome. LoF intolerant gene (gnomAD pLI > 0.99).",
+      "pop_af": "gnomAD AF = 0.00012; 32 heterozygotes, 0 homozygotes",
+      "clinvar_summary": "37 submissions: 32 Pathogenic, 4 Likely Pathogenic, 1 VUS. Founder mutation in Ashkenazi Jewish population.",
+      "domain": "Frameshift in BRCT domain (p.Gln1756Profs*74); creates premature termination codon, likely triggering NMD."
+    }
+  },
+  {
+    "variant": "BRCA1 c.4837A>G",
+    "truth": "BENIGN",
+    "bundle": {
+      "gene_context": "BRCA1 tumor suppressor.",
+      "pop_af": "gnomAD AF = 0.034; observed homozygotes",
+      "clinvar_summary": "120 submissions: 118 Benign, 2 Likely Benign.",
+      "domain": "p.Ser1613Gly; conservative substitution outside any structured domain."
+    }
+  },
+  {
+    "variant": "BRCA2 c.7976+1G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA2 tumor suppressor; hereditary breast and ovarian cancer.",
+      "pop_af": "gnomAD AF < 0.00001; not observed",
+      "clinvar_summary": "22 submissions: 20 Pathogenic, 2 Likely Pathogenic.",
+      "domain": "Canonical +1 splice donor site of intron 17; disrupts splicing; predicted to skip exon 17."
+    }
+  },
+  {
+    "variant": "BRCA2 c.6275_6276delTT",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA2 tumor suppressor.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "15 submissions: 14 Pathogenic, 1 LP.",
+      "domain": "Frameshift p.Leu2092Profs*7; PTC in coding sequence; truncates DNA-binding domain."
+    }
+  },
+  {
+    "variant": "TP53 c.524G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "TP53 master tumor suppressor; Li-Fraumeni syndrome (germline) and somatic in most cancers.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "85 submissions: 78 Pathogenic, 6 LP, 1 VUS. Hotspot for somatic mutation.",
+      "domain": "p.Arg175His; DNA-binding domain hotspot; abolishes binding to p53 response elements and acts dominant-negative over wild-type."
+    }
+  },
+  {
+    "variant": "TP53 c.215C>G",
+    "truth": "BENIGN",
+    "bundle": {
+      "gene_context": "TP53.",
+      "pop_af": "gnomAD AF = 0.18 (common polymorphism)",
+      "clinvar_summary": "90 submissions: 88 Benign.",
+      "domain": "p.Pro72Arg; well-known common polymorphism with functional differences but not disease-causing."
+    }
+  },
+  {
+    "variant": "CFTR c.1521_1523delCTT",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "CFTR chloride channel; cystic fibrosis (autosomal recessive).",
+      "pop_af": "gnomAD AF = 0.0067; most common CF allele",
+      "clinvar_summary": "200+ submissions: Pathogenic consensus.",
+      "domain": "In-frame deletion p.Phe508del in NBD1; causes misfolding and ER retention; loss-of-function."
+    }
+  },
+  {
+    "variant": "CFTR c.350G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "CFTR.",
+      "pop_af": "gnomAD AF = 0.00088",
+      "clinvar_summary": "Pathogenic consensus across submitters.",
+      "domain": "p.Arg117His; partial-function allele associated with CF when in trans with severe allele."
+    }
+  },
+  {
+    "variant": "HBB c.20A>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "HBB beta-globin gene; sickle cell anemia in homozygotes (autosomal recessive).",
+      "pop_af": "gnomAD AF = 0.008",
+      "clinvar_summary": "Pathogenic consensus; well-established disease association.",
+      "domain": "p.Glu7Val (HbS); gain-of-function via beta-globin polymerization under hypoxia."
+    }
+  },
+  {
+    "variant": "MLH1 c.1731+5G>A",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "MLH1 mismatch repair; Lynch syndrome (autosomal dominant cancer predisposition).",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "8 submissions: 3 VUS, 3 LP, 2 LB. Conflicting.",
+      "domain": "+5 splice donor position; conflicting splicing predictions; functional studies pending."
+    }
+  },
+  {
+    "variant": "MLH1 c.116G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MLH1; Lynch syndrome.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "20 submissions: 18 Pathogenic, 2 LP.",
+      "domain": "p.Gly39Glu; ATPase domain; abolishes ATP binding; demonstrated MMR-deficient in cellular assays."
+    }
+  },
+  {
+    "variant": "MSH2 exon 1-6 deletion",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MSH2 mismatch repair; Lynch syndrome.",
+      "pop_af": "Not in gnomAD (structural variant)",
+      "clinvar_summary": "12 submissions: Pathogenic consensus.",
+      "domain": "Large deletion spanning exons 1-6; abolishes protein production; loss-of-function."
+    }
+  },
+  {
+    "variant": "APOE c.388T>C",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "APOE; defines the e4 allele; risk factor for late-onset Alzheimer's disease.",
+      "pop_af": "gnomAD AF = 0.14",
+      "clinvar_summary": "Mixed: classified as risk factor rather than pathogenic per ACMG.",
+      "domain": "p.Cys130Arg; defines e4 isoform; modifies amyloid clearance but does not directly cause disease."
+    }
+  },
+  {
+    "variant": "MYH7 c.1208G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MYH7 beta-myosin heavy chain; hypertrophic cardiomyopathy.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "25 submissions: 23 Pathogenic.",
+      "domain": "p.Arg403Gln; motor domain hotspot; documented dominant-negative effect on sarcomere function."
+    }
+  },
+  {
+    "variant": "MYH7 c.5128G>A",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "MYH7.",
+      "pop_af": "gnomAD AF = 0.00003",
+      "clinvar_summary": "5 submissions: 3 VUS, 2 LP.",
+      "domain": "p.Glu1710Lys; rod domain; functional impact unclear; weak segregation data."
+    }
+  },
+  {
+    "variant": "PMS2 c.2T>C",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "PMS2 mismatch repair; Lynch syndrome (atypical, milder phenotype).",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "10 submissions: 9 Pathogenic, 1 LP.",
+      "domain": "Disrupts initiation Met1; protein not produced from this allele; loss-of-function."
+    }
+  },
+  {
+    "variant": "RYR1 c.7300G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "RYR1 ryanodine receptor; malignant hyperthermia susceptibility.",
+      "pop_af": "gnomAD AF = 0.00012",
+      "clinvar_summary": "Pathogenic for MH; segregates with anesthetic-triggered reactions.",
+      "domain": "p.Gly2434Arg; central domain hotspot for MH; gain-of-function (calcium leak)."
+    }
+  },
+  {
+    "variant": "FBN1 c.4621C>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "FBN1 fibrillin-1; Marfan syndrome (autosomal dominant connective tissue disorder).",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "8 submissions: Pathogenic.",
+      "domain": "p.Arg1541* nonsense; PTC in central rod domain; loss-of-function via NMD."
+    }
+  },
+  {
+    "variant": "GJB2 c.35delG",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "GJB2 connexin 26; non-syndromic hearing loss (autosomal recessive).",
+      "pop_af": "gnomAD AF = 0.013",
+      "clinvar_summary": "Pathogenic consensus; most common cause of congenital hearing loss in many populations.",
+      "domain": "Frameshift in N-terminal cytoplasmic tail; abolishes channel formation."
+    }
+  },
+  {
+    "variant": "HTT CAG x 42",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "HTT huntingtin; Huntington disease (autosomal dominant, age-dependent penetrance).",
+      "pop_af": "Not represented in gnomAD (repeat region)",
+      "clinvar_summary": "42-CAG threshold is well-established pathogenic length.",
+      "domain": "Polyglutamine expansion in N-terminal HTT; gain-of-function (toxic protein aggregates)."
+    }
+  },
+  {
+    "variant": "BRCA1 c.181T>G",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic per multiple submitters.",
+      "domain": "p.Cys61Gly; RING domain; abolishes BARD1 binding."
+    }
+  },
+  {
+    "variant": "BRCA2 c.9976A>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA2.",
+      "pop_af": "gnomAD AF = 0.0009 in Icelandic populations (founder)",
+      "clinvar_summary": "Pathogenic; Icelandic founder mutation.",
+      "domain": "p.Lys3326* nonsense near C-terminus; partial truncation; mildly increased breast cancer risk."
+    }
+  },
+  {
+    "variant": "BRCA1 c.5096G>A",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "BRCA1.",
+      "pop_af": "gnomAD AF = 0.00005",
+      "clinvar_summary": "Conflicting: 6 LP, 4 VUS, 2 LB.",
+      "domain": "p.Arg1699Gln; BRCT domain; conflicting functional assay data."
+    }
+  },
+  {
+    "variant": "TP53 c.733G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "TP53.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic consensus.",
+      "domain": "p.Gly245Ser; DNA-binding domain hotspot."
+    }
+  },
+  {
+    "variant": "CFTR c.3454G>C",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "CFTR.",
+      "pop_af": "gnomAD AF = 0.0001",
+      "clinvar_summary": "Conflicting: 5 VUS, 3 LB, 2 LP.",
+      "domain": "p.Asp1152His; NBD2; mild CFTR-RD association in some patients."
+    }
+  },
+  {
+    "variant": "HBB c.92+1G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "HBB; beta-thalassemia in homozygotes.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic; abolishes splicing of intron 1.",
+      "domain": "Canonical +1 splice donor; loss-of-function."
+    }
+  },
+  {
+    "variant": "MLH1 c.1959G>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MLH1; Lynch syndrome.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic per multiple submitters.",
+      "domain": "p.Lys653Asn; conflicting on synonymous-vs-splice; functional studies show splice disruption."
+    }
+  },
+  {
+    "variant": "MSH2 c.942+3A>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MSH2.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic; +3 splice site variant; documented exon 5 skipping.",
+      "domain": "+3 intronic; splice donor disruption."
+    }
+  },
+  {
+    "variant": "APOE c.137T>C",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "APOE.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic for type III hyperlipoproteinemia in homozygotes.",
+      "domain": "p.Leu46Pro; rare APOE variant disrupting receptor binding."
+    }
+  },
+  {
+    "variant": "MYH7 c.2389G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MYH7.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic; multiple HCM families.",
+      "domain": "p.Asp797Asn; motor domain; dominant-negative."
+    }
+  },
+  {
+    "variant": "BRCA1 c.68_69delAG",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA1.",
+      "pop_af": "gnomAD AF = 0.0011 in Ashkenazi populations (founder)",
+      "clinvar_summary": "Pathogenic; Ashkenazi founder mutation.",
+      "domain": "Frameshift in RING domain; loss-of-function."
+    }
+  },
+  {
+    "variant": "BRCA2 c.5946delT",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA2.",
+      "pop_af": "gnomAD AF = 0.001 in Ashkenazi populations (founder)",
+      "clinvar_summary": "Pathogenic; Ashkenazi founder mutation.",
+      "domain": "Frameshift; loss-of-function."
+    }
+  },
+  {
+    "variant": "MLH1 c.1852_1853delAA",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MLH1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "Frameshift; LoF."
+    }
+  },
+  {
+    "variant": "CFTR c.3909C>G",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "CFTR.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic for CF.",
+      "domain": "p.Asn1303Lys; NBD2; misfolding."
+    }
+  },
+  {
+    "variant": "TP53 c.713G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "TP53.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic; hotspot.",
+      "domain": "p.Cys238Tyr; DBD."
+    }
+  },
+  {
+    "variant": "BRCA1 c.211A>G",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "BRCA1.",
+      "pop_af": "gnomAD AF = 0.00009",
+      "clinvar_summary": "Conflicting: 4 VUS, 2 LB, 2 LP.",
+      "domain": "p.Arg71Gly; splice-region effect debated."
+    }
+  },
+  {
+    "variant": "BRCA2 c.2808_2811delACAA",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA2.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "Frameshift; LoF."
+    }
+  },
+  {
+    "variant": "MLH1 c.350C>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MLH1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "p.Thr117Met; ATPase domain; documented MMR-deficient."
+    }
+  },
+  {
+    "variant": "MSH2 c.1216C>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MSH2.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "p.Arg406* nonsense; LoF."
+    }
+  },
+  {
+    "variant": "RYR1 c.14387A>G",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "RYR1.",
+      "pop_af": "gnomAD AF = 0.00003",
+      "clinvar_summary": "Conflicting: 3 VUS, 2 LP, 1 LB.",
+      "domain": "p.Lys4796Arg; uncertain functional impact."
+    }
+  },
+  {
+    "variant": "FBN1 c.247G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "FBN1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic for Marfan.",
+      "domain": "p.Asp83Asn; cbEGF-like domain; calcium-binding disruption."
+    }
+  },
+  {
+    "variant": "GJB2 c.109G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "GJB2.",
+      "pop_af": "gnomAD AF = 0.005",
+      "clinvar_summary": "Pathogenic for hearing loss in homozygotes.",
+      "domain": "p.Val37Ile; reduced channel function; mild allele."
+    }
+  },
+  {
+    "variant": "BRCA1 c.815_824dup",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "Duplication causes frameshift; LoF."
+    }
+  },
+  {
+    "variant": "BRCA2 c.658_659delGT",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA2.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "Frameshift; LoF."
+    }
+  },
+  {
+    "variant": "TP53 c.747G>C",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "TP53.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Conflicting: 3 VUS, 2 LP.",
+      "domain": "p.Glu249Asp; DBD; functional impact unclear."
+    }
+  },
+  {
+    "variant": "CFTR c.2657+5G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "CFTR.",
+      "pop_af": "gnomAD AF = 0.00006",
+      "clinvar_summary": "Pathogenic; CFTR-RD association.",
+      "domain": "Splice donor +5 disruption."
+    }
+  },
+  {
+    "variant": "HBB c.118C>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "HBB; beta-thalassemia.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "p.Gln40* nonsense; LoF."
+    }
+  },
+  {
+    "variant": "MLH1 c.677G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MLH1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "p.Arg226Gln; splicing impact documented."
+    }
+  },
+  {
+    "variant": "MSH2 c.380A>G",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "MSH2.",
+      "pop_af": "gnomAD AF = 0.00002",
+      "clinvar_summary": "Conflicting: 4 VUS, 2 LB.",
+      "domain": "p.Asn127Ser; functional studies show partial activity."
+    }
+  },
+  {
+    "variant": "APOE c.460G>A",
+    "truth": "BENIGN",
+    "bundle": {
+      "gene_context": "APOE.",
+      "pop_af": "gnomAD AF = 0.005",
+      "clinvar_summary": "Benign per submitters.",
+      "domain": "p.Asp154Asn; common variant, no disease association."
+    }
+  },
+  {
+    "variant": "MYH7 c.5453A>G",
+    "truth": "BENIGN",
+    "bundle": {
+      "gene_context": "MYH7.",
+      "pop_af": "gnomAD AF = 0.002",
+      "clinvar_summary": "Benign.",
+      "domain": "p.Glu1818Gly; rod domain; common variant."
+    }
+  },
+  {
+    "variant": "PMS2 c.137G>T",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "PMS2.",
+      "pop_af": "gnomAD AF = 0.0003",
+      "clinvar_summary": "Conflicting submissions.",
+      "domain": "p.Ser46Ile; ATPase domain; functional studies pending."
+    }
+  },
+  {
+    "variant": "RYR1 c.6502G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "RYR1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic for MH.",
+      "domain": "p.Gly2168Ser; central domain; gain-of-function."
+    }
+  },
+  {
+    "variant": "FBN1 c.2638G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "FBN1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic for Marfan.",
+      "domain": "p.Asp880Asn; cbEGF; calcium-binding loss."
+    }
+  },
+  {
+    "variant": "GJB2 c.139G>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "GJB2.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "p.Glu47*; nonsense; LoF."
+    }
+  },
+  {
+    "variant": "BRCA1 c.3700_3704delGTAAA",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "Frameshift; LoF."
+    }
+  },
+  {
+    "variant": "BRCA2 c.7480C>T",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "BRCA2.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "p.Arg2494*; nonsense; LoF."
+    }
+  },
+  {
+    "variant": "MLH1 c.546-1G>A",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MLH1.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "Canonical splice acceptor -1; LoF."
+    }
+  },
+  {
+    "variant": "MSH2 c.2T>C",
+    "truth": "PATHOGENIC",
+    "bundle": {
+      "gene_context": "MSH2.",
+      "pop_af": "gnomAD AF < 0.00001",
+      "clinvar_summary": "Pathogenic.",
+      "domain": "Disrupts initiation Met1; no protein."
+    }
+  },
+  {
+    "variant": "BRCA1 c.5503C>T",
+    "truth": "VUS",
+    "bundle": {
+      "gene_context": "BRCA1.",
+      "pop_af": "gnomAD AF = 0.0001",
+      "clinvar_summary": "Conflicting: 3 VUS, 2 LB, 1 LP.",
+      "domain": "p.Arg1835*; near C-terminus; partial truncation."
+    }
+  }
+];
