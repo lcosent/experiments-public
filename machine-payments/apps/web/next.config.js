@@ -6,6 +6,7 @@ const config = {
   },
   // Allow workspace packages to be transpiled by Next.
   transpilePackages: ['@autocompute/types', '@autocompute/mpp-sim'],
+  output: 'export'
 };
 
 export default config;
