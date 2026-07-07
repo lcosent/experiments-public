@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinvar-classify"
+version = "0.1.0"
+description = "Research probe: LLM-assisted classification of clinical genetic variants"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Luca Cosentino" }]
+dependencies = ["openai>=1.40", "click>=8.1", "rich>=13.7"]
+
+[project.scripts]
+clinvar-classify = "clinvar_classify.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["clinvar_classify*"]
