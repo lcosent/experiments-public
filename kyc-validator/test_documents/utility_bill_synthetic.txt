@@ -1,0 +1,13 @@
+ENEL ENERGIA
+Customer Bill — Detail of Charges
+
+Customer: MARIO ROSSI
+Account number: 1234567890
+Service address: VIA ROMA 42, 00100 ROMA RM, ITALY
+Billing period: 2026-03-01 to 2026-03-31
+Issue date: 2026-04-05
+Due date: 2026-04-30
+
+Total amount due:    EUR 87.43
+
+Thank you for choosing Enel. For questions call 800 900 800.
