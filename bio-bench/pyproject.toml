@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bio-bench"
+version = "0.1.0"
+description = "Narrow eval harness for LLMs on biological reasoning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Luca Cosentino" }]
+dependencies = ["openai>=1.40", "click>=8.1", "rich>=13.7"]
+
+[project.scripts]
+bio-bench = "bio_bench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bio_bench*"]

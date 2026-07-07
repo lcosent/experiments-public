@@ -1,0 +1,20 @@
+{"input": "BRCA1 c.5266dupC (p.Gln1756Profs*74)", "target": "PATHOGENIC", "meta": {"gene_context": "BRCA1 tumor suppressor; frameshift in the BRCT domain abolishes function", "expected_mechanism": "loss-of-function"}}
+{"input": "BRCA2 c.7976+1G>A", "target": "PATHOGENIC", "meta": {"gene_context": "Canonical splice donor site of exon 17", "expected_mechanism": "splice"}}
+{"input": "TP53 c.524G>A (p.Arg175His)", "target": "PATHOGENIC", "meta": {"gene_context": "DNA-binding domain hotspot mutation, frequently observed in Li-Fraumeni", "expected_mechanism": "dominant-negative"}}
+{"input": "CFTR c.1521_1523delCTT (p.Phe508del)", "target": "PATHOGENIC", "meta": {"gene_context": "Most common cystic fibrosis allele; misfolding of NBD1 domain", "expected_mechanism": "loss-of-function"}}
+{"input": "HBB c.20A>T (p.Glu7Val)", "target": "PATHOGENIC", "meta": {"gene_context": "Sickle cell anemia variant in the beta-globin gene", "expected_mechanism": "gain-of-function"}}
+{"input": "MLH1 c.1731+5G>A", "target": "VUS", "meta": {"gene_context": "Intronic variant in a mismatch repair gene, position +5 of donor splice site", "expected_mechanism": "splice"}}
+{"input": "APOE c.388T>C (p.Cys130Arg)", "target": "VUS", "meta": {"gene_context": "Defines the APOE e4 allele; risk modifier for late-onset Alzheimer's but not classified as pathogenic per ACMG", "expected_mechanism": "risk"}}
+{"input": "CHEK2 c.470T>C (p.Ile157Thr)", "target": "VUS", "meta": {"gene_context": "Common variant with modestly elevated cancer risk in some populations", "expected_mechanism": "hypomorph"}}
+{"input": "PMS2 c.2T>C (p.Met1?)", "target": "PATHOGENIC", "meta": {"gene_context": "Disrupts initiation codon of a Lynch syndrome gene", "expected_mechanism": "loss-of-function"}}
+{"input": "BRCA1 c.4837A>G (p.Ser1613Gly)", "target": "BENIGN", "meta": {"gene_context": "Common polymorphism observed in >1% of gnomAD; no functional consequence reported", "expected_mechanism": "benign"}}
+{"input": "TTN c.50800G>A (p.Val16934Ile)", "target": "BENIGN", "meta": {"gene_context": "Conservative substitution in a large structural protein; gnomAD AF > 0.5%", "expected_mechanism": "benign"}}
+{"input": "RYR1 c.7300G>A (p.Gly2434Arg)", "target": "PATHOGENIC", "meta": {"gene_context": "Malignant hyperthermia susceptibility allele in the central domain of the ryanodine receptor", "expected_mechanism": "gain-of-function"}}
+{"input": "DMD exon 45-50 deletion", "target": "PATHOGENIC", "meta": {"gene_context": "Out-of-frame deletion in Duchenne muscular dystrophy gene", "expected_mechanism": "loss-of-function"}}
+{"input": "DMD exon 45-47 deletion", "target": "PATHOGENIC", "meta": {"gene_context": "In-frame deletion typically associated with Becker (milder) phenotype", "expected_mechanism": "hypomorph"}}
+{"input": "FBN1 c.4621C>T (p.Arg1541*)", "target": "PATHOGENIC", "meta": {"gene_context": "Nonsense variant in fibrillin-1 associated with Marfan syndrome", "expected_mechanism": "loss-of-function"}}
+{"input": "MYH7 c.1208G>A (p.Arg403Gln)", "target": "PATHOGENIC", "meta": {"gene_context": "Hypertrophic cardiomyopathy variant in the motor domain of beta-myosin heavy chain", "expected_mechanism": "dominant-negative"}}
+{"input": "GJB2 c.35delG", "target": "PATHOGENIC", "meta": {"gene_context": "Most common cause of autosomal recessive non-syndromic hearing loss; frameshift in connexin 26", "expected_mechanism": "loss-of-function"}}
+{"input": "PAH c.1066-11G>A", "target": "PATHOGENIC", "meta": {"gene_context": "Intronic variant in phenylalanine hydroxylase known to activate a cryptic splice site", "expected_mechanism": "splice"}}
+{"input": "F8 inversion of intron 22", "target": "PATHOGENIC", "meta": {"gene_context": "Accounts for ~45% of severe hemophilia A cases", "expected_mechanism": "loss-of-function"}}
+{"input": "HTT CAG repeat expansion to 42 repeats", "target": "PATHOGENIC", "meta": {"gene_context": "Huntington disease threshold (>40 repeats); polyglutamine tract expansion in huntingtin", "expected_mechanism": "gain-of-function"}}
