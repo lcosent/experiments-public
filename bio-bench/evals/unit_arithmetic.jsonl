@@ -1,0 +1,15 @@
+{"input": "You have a 10 mM stock solution. You want 100 µL at 50 µM. How much stock do you add (in µL)?", "target": 0.5, "meta": {"unit": "µL", "tol": 0.01}}
+{"input": "Convert 25 ng/µL to molarity for a 100 kDa protein (molecular weight 100,000 g/mol). Express in nM.", "target": 250, "meta": {"unit": "nM", "tol": 1.0}}
+{"input": "A 1 mg/mL antibody stock; you need 200 µL at 5 µg/mL. How much stock do you take (in µL)?", "target": 1.0, "meta": {"unit": "µL", "tol": 0.02}}
+{"input": "Serial dilution: starting at 1 mM, you do five 1:10 dilutions in series. What is the final concentration (in nM)?", "target": 10, "meta": {"unit": "nM", "tol": 0.1}}
+{"input": "10 IU of insulin equals approximately how many mg (assuming 28 IU/mg)?", "target": 0.357, "meta": {"unit": "mg", "tol": 0.01}}
+{"input": "Convert 5 mg/mL of a 50 kDa protein to molarity. Express in µM.", "target": 100, "meta": {"unit": "µM", "tol": 1.0}}
+{"input": "You need 10 mL of 0.5 M NaCl. NaCl molecular weight is 58.44 g/mol. How many grams of NaCl do you weigh out?", "target": 0.2922, "meta": {"unit": "g", "tol": 0.005}}
+{"input": "What is the final concentration after mixing 50 µL of 100 µM stock with 950 µL of buffer? Answer in µM.", "target": 5, "meta": {"unit": "µM", "tol": 0.05}}
+{"input": "You have 50 mL of 2x reaction buffer. How much water do you add to make it 1x? Answer in mL.", "target": 50, "meta": {"unit": "mL", "tol": 0.5}}
+{"input": "Convert 1 OD260 of dsDNA to ng/µL.", "target": 50, "meta": {"unit": "ng/µL", "tol": 1.0}}
+{"input": "Convert 1 OD260 of single-stranded RNA to ng/µL.", "target": 40, "meta": {"unit": "ng/µL", "tol": 1.0}}
+{"input": "Convert 1 OD260 of single-stranded oligo DNA to ng/µL.", "target": 33, "meta": {"unit": "ng/µL", "tol": 1.0}}
+{"input": "If you load 500 ng of total RNA per lane on a gel and have 8 lanes, how many ng total? Answer in ng.", "target": 4000, "meta": {"unit": "ng", "tol": 1.0}}
+{"input": "Convert 100 ng/µL to µg/mL.", "target": 100, "meta": {"unit": "µg/mL", "tol": 0.5}}
+{"input": "A PCR primer is 25 nt long. Approximate molecular weight = 25 × 330 g/mol/nt = 8,250 g/mol. Convert 10 ng/µL to nM.", "target": 1212, "meta": {"unit": "nM", "tol": 10.0}}

@@ -1,0 +1,15 @@
+{"input": "Constitutively active BRAF V600E mutation", "target": "INCREASE", "meta": {"context": "MAPK pathway: BRAF -> MEK -> ERK -> downstream proliferation. Asking about ERK phosphorylation."}}
+{"input": "Pharmacologic inhibition of MEK1/2 by trametinib", "target": "DECREASE", "meta": {"context": "MAPK pathway: BRAF -> MEK -> ERK. Asking about ERK phosphorylation."}}
+{"input": "Loss-of-function mutation in PTEN", "target": "INCREASE", "meta": {"context": "PI3K/AKT pathway: PTEN dephosphorylates PIP3 to PIP2, antagonizing PI3K. Asking about AKT phosphorylation."}}
+{"input": "Pharmacologic inhibition of mTORC1 by rapamycin", "target": "DECREASE", "meta": {"context": "PI3K/AKT/mTOR pathway. Asking about S6 kinase phosphorylation."}}
+{"input": "MDM2 amplification", "target": "DECREASE", "meta": {"context": "p53 pathway: MDM2 is the primary negative regulator of p53. Asking about p53 protein levels."}}
+{"input": "DNA damage from ionizing radiation", "target": "INCREASE", "meta": {"context": "p53 pathway: ATM-mediated p53 stabilization in response to double-strand breaks. Asking about p53 protein levels."}}
+{"input": "Knockout of TSC2", "target": "INCREASE", "meta": {"context": "mTOR pathway: TSC1/TSC2 inhibits Rheb, which activates mTORC1. Asking about mTORC1 activity."}}
+{"input": "Wnt ligand binding to Frizzled receptor", "target": "INCREASE", "meta": {"context": "Wnt/beta-catenin: Wnt stabilizes beta-catenin by inhibiting the destruction complex. Asking about nuclear beta-catenin."}}
+{"input": "APC truncating mutation", "target": "INCREASE", "meta": {"context": "Wnt/beta-catenin pathway: APC is part of the destruction complex that degrades beta-catenin. Asking about nuclear beta-catenin."}}
+{"input": "Constitutive Notch1 intracellular domain expression", "target": "INCREASE", "meta": {"context": "Notch pathway: NICD translocates to nucleus and activates CSL/RBPJ targets. Asking about HES1 transcription."}}
+{"input": "Treatment with gamma-secretase inhibitor", "target": "DECREASE", "meta": {"context": "Notch pathway: gamma-secretase cleaves Notch to release NICD. Asking about HES1 transcription."}}
+{"input": "STAT3 phosphorylation in response to IL-6", "target": "INCREASE", "meta": {"context": "JAK/STAT pathway. Asking about STAT3 target gene expression."}}
+{"input": "SOCS3 overexpression", "target": "DECREASE", "meta": {"context": "JAK/STAT negative feedback: SOCS3 binds and inhibits JAK kinases. Asking about STAT3 phosphorylation."}}
+{"input": "Hypoxia (low oxygen)", "target": "INCREASE", "meta": {"context": "HIF pathway: in normoxia, HIF1a is hydroxylated and degraded. Asking about HIF1a protein levels."}}
+{"input": "Treatment of normoxic cells with VHL agonist", "target": "DECREASE", "meta": {"context": "HIF pathway: VHL is the E3 ligase that targets hydroxylated HIF1a. Asking about HIF1a protein levels."}}
