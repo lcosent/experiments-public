@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fin-evals"
+version = "0.1.0"
+description = "Domain eval harness for LLMs on financial reasoning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Luca Cosentino" }]
+dependencies = [
+    "openai>=1.40",
+    "click>=8.1",
+    "rich>=13.7",
+]
+
+[project.scripts]
+fin-evals = "fin_evals.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fin_evals*"]
