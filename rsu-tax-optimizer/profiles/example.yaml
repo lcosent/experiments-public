@@ -1,0 +1,19 @@
+filing_status: married_filing_jointly
+state: CA
+salary_w2_usd: 280_000
+
+vest_schedule:
+  total_shares: 12_000
+  start_date: 2024-08-01
+  cliff_months: 12
+  total_months: 48
+  frequency: monthly
+
+stock:
+  current_price_usd: 185.00
+  expected_drift_annual: 0.10
+  expected_vol_annual: 0.38
+
+strategy:
+  sell_to_cover_default: true
+  hold_to_long_term: false
