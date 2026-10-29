@@ -29,7 +29,7 @@ document.getElementById('app')!.innerHTML = `
         <p class="project-desc">A progressive tax calculator and Monte Carlo sell-vs-hold strategy simulator for Tech RSU vests. Compare tax liabilities and risk profiles client-side.</p>
       </div>
       <div class="cli-widget">
-        <span class="cli-code">git clone https://github.com/lcosent/rsu-tax-optimizer.git</span>
+        <span class="cli-code">git clone https://github.com/lcosent/experiments-public.git</span>
         <button class="cli-copy-btn" id="copy-cli-btn">Copy</button>
       </div>
     </header>
@@ -162,7 +162,7 @@ const recText = document.getElementById('recommendation-text')!;
 const copyBtn = document.getElementById('copy-cli-btn');
 if (copyBtn) {
   copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('git clone https://github.com/lcosent/rsu-tax-optimizer.git');
+    navigator.clipboard.writeText('git clone https://github.com/lcosent/experiments-public.git');
     copyBtn.innerText = 'Copied!';
     setTimeout(() => {
       copyBtn.innerText = 'Copy';
