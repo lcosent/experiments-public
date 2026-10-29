@@ -72,7 +72,7 @@ document.getElementById('app')!.innerHTML = `
         <p class="project-desc">A financial reasoning evaluation harness. Compare LLM capabilities on SEC 10-K analysis, treasury math, and term sheet interpretation.</p>
       </div>
       <div class="cli-widget">
-        <span class="cli-code">git clone https://github.com/lcosent/fin-evals.git</span>
+        <span class="cli-code">git clone https://github.com/lcosent/experiments-public.git</span>
         <button class="cli-copy-btn" id="copy-cli-btn">Copy</button>
       </div>
     </header>
@@ -186,7 +186,7 @@ const graderRationale = document.getElementById('grader-rationale')!;
 const copyBtn = document.getElementById('copy-cli-btn');
 if (copyBtn) {
   copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('git clone https://github.com/lcosent/fin-evals.git');
+    navigator.clipboard.writeText('git clone https://github.com/lcosent/experiments-public.git');
     copyBtn.innerText = 'Copied!';
     setTimeout(() => {
       copyBtn.innerText = 'Copy';
