@@ -1,4 +1,4 @@
-# MachinePay
+# machine-payments
 
 > **A demo of an AI agent that buys things on your behalf — with a strict budget, a tamper-proof receipt for every purchase, and a single statement at the end that reconciles credit-card spend with crypto spend.**
 
