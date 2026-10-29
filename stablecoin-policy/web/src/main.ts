@@ -105,7 +105,7 @@ document.getElementById('app')!.innerHTML = `
         <p class="project-desc">A selective-disclosure compliance engine for stablecoin payments. Compile policies, define rules, and run secure client-side transaction screening evaluations.</p>
       </div>
       <div class="cli-widget">
-        <span class="cli-code">git clone https://github.com/lcosent/stablecoin-policy.git</span>
+        <span class="cli-code">git clone https://github.com/lcosent/experiments-public.git</span>
         <button class="cli-copy-btn" id="copy-cli-btn">Copy</button>
       </div>
     </header>
@@ -247,7 +247,7 @@ paymentInput.value = defaultPayment;
 const copyBtn = document.getElementById('copy-cli-btn');
 if (copyBtn) {
   copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('git clone https://github.com/lcosent/stablecoin-policy.git');
+    navigator.clipboard.writeText('git clone https://github.com/lcosent/experiments-public.git');
     copyBtn.innerText = 'Copied!';
     setTimeout(() => {
       copyBtn.innerText = 'Copy';
