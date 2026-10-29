@@ -53,7 +53,7 @@ export default function HomePage() {
   );
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('git clone https://github.com/lcosent/machine-payments.git');
+    navigator.clipboard.writeText('git clone https://github.com/lcosent/experiments-public.git');
     setCopyText('Copied!');
     setTimeout(() => setCopyText('Copy'), 2000);
   };
@@ -121,7 +121,7 @@ export default function HomePage() {
             gap: '1.5rem',
             alignItems: 'center'
           }}>
-            <span className="cli-code" style={{ color: 'var(--color-success)' }}>git clone https://github.com/lcosent/machine-payments.git</span>
+            <span className="cli-code" style={{ color: 'var(--color-success)' }}>git clone https://github.com/lcosent/experiments-public.git</span>
             <button onClick={handleCopy} style={{
               background: 'none',
               border: 'none',
