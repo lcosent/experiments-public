@@ -102,7 +102,7 @@ document.getElementById('app')!.innerHTML = `
         <p class="project-desc">A multi-agent decision pressure-testing framework. Watch an Advocate, Skeptic, and Judge debate product, hiring, and M&A proposals to surface uncalled risks.</p>
       </div>
       <div class="cli-widget">
-        <span class="cli-code">git clone https://github.com/lcosent/agent-debate.git</span>
+        <span class="cli-code">git clone https://github.com/lcosent/experiments-public.git</span>
         <button class="cli-copy-btn" id="copy-cli-btn">Copy</button>
       </div>
     </header>
@@ -191,7 +191,7 @@ const devTerminal = document.getElementById('dev-terminal')!;
 const copyBtn = document.getElementById('copy-cli-btn');
 if (copyBtn) {
   copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('git clone https://github.com/lcosent/agent-debate.git');
+    navigator.clipboard.writeText('git clone https://github.com/lcosent/experiments-public.git');
     copyBtn.innerText = 'Copied!';
     setTimeout(() => {
       copyBtn.innerText = 'Copy';
