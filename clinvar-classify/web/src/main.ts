@@ -39,7 +39,7 @@ document.getElementById('app')!.innerHTML = `
         <p class="project-desc">An AI-assisted variant classification research explorer. Browse ClinVar datasets, inspect mock variant classification workflows, and calculate ACMG criteria.</p>
       </div>
       <div class="cli-widget">
-        <span class="cli-code">git clone https://github.com/lcosent/clinvar-classify.git</span>
+        <span class="cli-code">git clone https://github.com/lcosent/experiments-public.git</span>
         <button class="cli-copy-btn" id="copy-cli-btn">Copy</button>
       </div>
     </header>
@@ -85,7 +85,7 @@ const detailPanel = document.getElementById('detail-panel')!;
 const copyBtn = document.getElementById('copy-cli-btn');
 if (copyBtn) {
   copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('git clone https://github.com/lcosent/clinvar-classify.git');
+    navigator.clipboard.writeText('git clone https://github.com/lcosent/experiments-public.git');
     copyBtn.innerText = 'Copied!';
     setTimeout(() => {
       copyBtn.innerText = 'Copy';
