@@ -37,7 +37,7 @@ document.getElementById('app')!.innerHTML = `
         <p class="project-desc">A statistical A/B testing harness for LLM prompts. Compare prompt variants, run simulated user trials, and evaluate performance using Wilcoxon Signed-Rank tests.</p>
       </div>
       <div class="cli-widget">
-        <span class="cli-code">git clone https://github.com/lcosent/prompt-eval-arena.git</span>
+        <span class="cli-code">git clone https://github.com/lcosent/experiments-public.git</span>
         <button class="cli-copy-btn" id="copy-cli-btn">Copy</button>
       </div>
     </header>
@@ -171,7 +171,7 @@ const chartCanvas = document.getElementById('prompt-chart') as HTMLCanvasElement
 const copyBtn = document.getElementById('copy-cli-btn');
 if (copyBtn) {
   copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('git clone https://github.com/lcosent/prompt-eval-arena.git');
+    navigator.clipboard.writeText('git clone https://github.com/lcosent/experiments-public.git');
     copyBtn.innerText = 'Copied!';
     setTimeout(() => {
       copyBtn.innerText = 'Copy';
