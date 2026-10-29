@@ -28,7 +28,7 @@ document.getElementById('app')!.innerHTML = `
         <p class="project-desc">A scenario planning calculator for major life events. Formulate decisions regarding sabbaticals or relocations, and inspect cash-flow trade-offs and hidden risk flags.</p>
       </div>
       <div class="cli-widget">
-        <span class="cli-code">git clone https://github.com/lcosent/life-scenarios.git</span>
+        <span class="cli-code">git clone https://github.com/lcosent/experiments-public.git</span>
         <button class="cli-copy-btn" id="copy-cli-btn">Copy</button>
       </div>
     </header>
@@ -98,7 +98,7 @@ const chartCanvas = document.getElementById('cashflow-chart') as HTMLCanvasEleme
 const copyBtn = document.getElementById('copy-cli-btn');
 if (copyBtn) {
   copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('git clone https://github.com/lcosent/life-scenarios.git');
+    navigator.clipboard.writeText('git clone https://github.com/lcosent/experiments-public.git');
     copyBtn.innerText = 'Copied!';
     setTimeout(() => {
       copyBtn.innerText = 'Copy';
